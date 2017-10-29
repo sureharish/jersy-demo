@@ -20,4 +20,9 @@ public String updateProduct()
 {
 	return "product update";
 }
+
+public String save()
+{
+	return "save";
+}
 }
