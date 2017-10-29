@@ -24,7 +24,7 @@ public class ProductController {
 	@RequestMapping(value="/getProduct",method=RequestMethod.GET)
 	public ResponseEntity<?> getProduct()
 	{
-		return new ResponseEntity<>(productService.getProduct(), HttpStatus.OK);
+		return new ResponseEntity<>(productService.updateProduct(), HttpStatus.OK);
 	}
 	@RequestMapping(value="/updateProduct",method=RequestMethod.PUT)
 	public ResponseEntity<?> updateProduct()
