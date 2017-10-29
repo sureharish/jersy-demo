@@ -26,7 +26,7 @@ public class ProductController {
 	{
 		return new ResponseEntity<>(productService.updateProduct(), HttpStatus.OK);
 	}
-	@RequestMapping(value="/updateProduct",method=RequestMethod.PUT)
+	@RequestMapping(value="/updateProducs",method=RequestMethod.PUT)
 	public ResponseEntity<?> updateProduct()
 	{
 		return new ResponseEntity<>(productService.updateProduct(), HttpStatus.OK);
@@ -42,7 +42,7 @@ public class ProductController {
 		
 		
 	}
-	@RequestMapping(value="/save",method=RequestMethod.PUT)
+	@RequestMapping(value="/save",method=RequestMethod.POST)
 	public ResponseEntity<?> saves()
 	{
 		return new ResponseEntity<>(productService.updateProduct(), HttpStatus.OK);
