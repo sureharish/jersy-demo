@@ -14,7 +14,7 @@ import com.nisum.Jersydemo.service.ProductService;
 public class ProductController {
 	@Autowired
 	ProductService productService;
-	@RequestMapping(value="/getAllProduct",method=RequestMethod.POST)
+	@RequestMapping(value="/getAllProduct",method=RequestMethod.PUT)
 	public ResponseEntity<?> getAllProducts()
 	{
 		return new ResponseEntity<>(productService.getAllProducts(), HttpStatus.OK);
