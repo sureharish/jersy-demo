@@ -42,7 +42,7 @@ public class ProductController {
 		
 		
 	}
-	@RequestMapping(value="/save",method=RequestMethod.POST)
+	@RequestMapping(value="/save",method=RequestMethod.DELETE)
 	public ResponseEntity<?> saves()
 	{
 		return new ResponseEntity<>(productService.updateProduct(), HttpStatus.OK);
