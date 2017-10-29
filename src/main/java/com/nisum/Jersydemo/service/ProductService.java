@@ -11,5 +11,9 @@ public class ProductService {
 		return "all the prodcuts";
 	}
 	
-
+public String getProduct()
+	
+	{
+		return "one prodcut";
+	}
 }

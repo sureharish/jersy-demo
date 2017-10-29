@@ -19,5 +19,11 @@ public class ProductController {
 	{
 		return new ResponseEntity<>(productService.getAllProducts(), HttpStatus.OK);
 	}
-
+	 
+	
+	@RequestMapping(value="/getProduct",method=RequestMethod.GET)
+	public ResponseEntity<?> getProduct()
+	{
+		return new ResponseEntity<>(productService.getProduct(), HttpStatus.OK);
+	}
 }
