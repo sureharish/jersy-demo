@@ -16,4 +16,8 @@ public String getProduct()
 	{
 		return "one prodcut";
 	}
+public String updateProduct()
+{
+	return "product update";
+}
 }
